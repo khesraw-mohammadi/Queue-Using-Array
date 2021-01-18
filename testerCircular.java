@@ -10,8 +10,8 @@ public class testerCircular
     {
         CircularQueueUsingArray queue = new CircularQueueUsingArray(3);
         queue.enqueue(20);
-        queue.enqueue(30);
         queue.dequeue();
+        queue.enqueue(40);
         queue.enqueue(40);
         queue.display();
 

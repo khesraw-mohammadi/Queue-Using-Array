@@ -55,7 +55,8 @@ public class CircularQueueUsingArray
            System.out.println("Queue is Empty!!!");
        }else
        {
-           x = queue[++front];
+           front = (front + 1) % size;
+           x = queue[front];
        }
        
        return x;
@@ -68,10 +69,12 @@ public class CircularQueueUsingArray
            System.out.println("Queue is Empty!!!");
        }else
        {
-            for(int i = front + 1; i <= rear; i++)
+            int i = front + 1;
+            do
             {
                 System.out.printf("%d ",queue[i]);
-            }
+                i = (i + 1) % size;
+            }while(i != (rear + 1) % size);
             System.out.println("");
        }
    }

@@ -15,6 +15,7 @@ public class tester
         queue.display();
         queue.dequeue();
         queue.dequeue();
+        queue.dequeue();
         queue.display();
     }
     
